@@ -174,6 +174,12 @@ variable "domain_name_certificate_arn" {
   default     = null
 }
 
+variable "domain_name_endpoint_type" {
+  description = "The endpoint type to use for API gateway"
+  type        = string
+  default     = "REGIONAL"
+}
+
 variable "domain_name_tags" {
   description = "A mapping of tags to assign to API domain name resource."
   type        = map(string)
